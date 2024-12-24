@@ -8,6 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        custom_gray: {
+          DEFAULT: "#d4d4d4"
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
