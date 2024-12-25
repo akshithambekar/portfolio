@@ -3,5 +3,22 @@
 @tailwind utilities;
 
 body {
-    background-color: #131424
+    background-color: #131424;
+    cursor: none;
+  }
+  
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+* {
+    cursor: none;
 }
