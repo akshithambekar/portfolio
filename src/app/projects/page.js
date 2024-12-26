@@ -24,7 +24,7 @@ export default function Projects() {
                     </div>
                     <div className="flex items-center justify-center px-8">
                         <Link href="https://youtu.be/fvdOhyDX81I" target="_blank">
-                            <Image src="/parkit-demo.png" alt="ParkIt demo" width={500} height={300} className="hover:opacity-75 object-contain" />
+                            <Image src="/parkit-demo.png" alt="ParkIt demo" width={500} height={300} className="hover:opacity-75 object-contain shadow-2xl" />
                         </Link>
                     </div>
                 </div>
