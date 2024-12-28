@@ -1,10 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [visible, setVisible] = useState(true);
+  const [hoveringLink, setHoveringLink] = useState(false);
+  const linkRef = useRef(null);
+
   useEffect(() => {
     
     const moveCursor = (e) => {
@@ -36,8 +39,8 @@ const Cursor = () => {
     <div
       className="custom-cursor fixed bg-white rounded-full pointer-events-none z-50"
       style={{
-        width: "10px",  // Custom width for the cursor
-        height: "10px", // Custom height for the cursor
+        width: hoveringLink ? "20px" : "10px",  // Custom width for the cursor
+        height: hoveringLink ? "20px" : "10px", // Custom height for the cursor
         transform: `translate(${position.x - 7.5}px, ${position.y - 7.5}px)`,
       }}
     ></div>
