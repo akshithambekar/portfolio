@@ -12,7 +12,7 @@ export default function Skills() {
         setActiveCategory("languages");
     }, []);
     return (
-        <div className="max-w-[1260px] justify-center items-center h-48 px-44 pt-16 subpixel-antialiased mx-auto">
+        <div className="max-w-[1260px] justify-center items-center h-48 px-44 pt-4 subpixel-antialiased mx-auto">
             <h1 className="text-white text-2xl text-center font-bold underline">Technical Skills</h1>
             <div className="flex items-center justify-center py-5 space-x-4">
                 <button onClick={() => setActiveCategory("languages")} className={`font-semibold px-4 py-2 rounded-full transition-colors ${activeCategory === "languages" ? "bg-gray-800 text-white" : "text-custom_gray hover:text-white"}`}>
@@ -22,7 +22,7 @@ export default function Skills() {
                     Tools and Frameworks
                 </button>
             </div>
-            <div className="flex flex-col justify-center text-custom_gray max-w-[640px] mx-auto pt-4">
+            <div className="flex flex-col justify-center text-custom_gray max-w-[640px] mx-auto pt-4 pb-4">
                 {categories[activeCategory]?.map((item, index) => (
                     <div key={index} className="flex justify-between items-center py-1">
                         <p className="order-first text-lg font-semibold">{item.name}</p>

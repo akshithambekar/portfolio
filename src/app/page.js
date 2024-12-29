@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import Cursor from "./components/cursor";
-import Skills from "./components/skills";
 import Intro from "./components/intro";
+import Experience from "./components/experience";
+import Skills from "./components/skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div>
         <Navbar />
         <Intro />
+        <Experience />
         <Skills />
       </div>
     </main>
