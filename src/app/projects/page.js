@@ -39,7 +39,7 @@ export default function Projects() {
                     </div>
                     <div className="flex w-[400px] items-center justify-center px-8">
                         <Link href="https://youtu.be/fvdOhyDX81I" target="_blank">
-                            <Image src="/parkit-demo.png" alt="ParkIt demo" width={500} height={300} className="hover:opacity-75 object-contain shadow-2xl"/>
+                            <Image src="/parkit-demo.png" alt="ParkIt demo" width={500} height={300} className="hover:opacity-65 object-contain shadow-2xl"/>
                         </Link>
                     </div>
                 </div>
@@ -65,14 +65,12 @@ export default function Projects() {
                         <p className="text-sm px-4 mt-2">
                             For my senior project at TJHSST, I developed a license plate detection algorithm tailored towards the low-resolution camera systems of Tesla vehicles manufactured before 2023.
                             Using a YOLOv8 model trained with over 10000 images of license plates, the algorithm detects plates in dashcam footage and enhances clarity using OpenCV's edge detection, hysteresis, 
-                            and non-max suppression techniques. This processed image is passed to the EasyOCR optical character recognition library to correctly identify the letters on the license plate, 
-                            and is displayed in real-time from the original video.
+                            and non-max suppression techniques. The processed image is passed to the EasyOCR optical character recognition library to correctly identify the letters on the license plate, 
+                            and is displayed in real-time on the original video.
                         </p>
                     </div>
                     <div className="flex w-[400px] items-center justify-center px-8">
-                        <Link href="https://youtu.be/fvdOhyDX81I" target="_blank">
-                            <Image src="/parkit-demo.png" alt="ParkIt demo" width={500} height={300} className="hover:opacity-75 object-contain shadow-2xl"/>
-                        </Link>
+                        <Image src="/license_plate_demo.png" alt="License plate demo" width={500} height={300} className="object-contain shadow-2xl"/>
                     </div>
                 </div>
             </div>
@@ -102,8 +100,8 @@ export default function Projects() {
                         </p>
                     </div>
                     <div className="flex w-[348px] items-center justify-center grow-0 px-8">
-                        <Link href="https://youtu.be/fvdOhyDX81I" target="_blank">
-                            <Image src="/parkit-demo.png" alt="ParkIt demo" width={500} height={300} className="hover:opacity-75 object-contain shadow-2xl grow-0"/>
+                        <Link href="/">
+                            <Image src="/portfolio.png" alt="Portfolio thumbnail" width={500} height={300} className="hover:opacity-65 object-contain shadow-2xl grow-0"/>
                         </Link>
                     </div>
                 </div>

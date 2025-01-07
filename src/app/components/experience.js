@@ -111,7 +111,7 @@ export default function Experience() {
     }, []);
     return (
         <div className="max-w-[1260px] justify-center items-center min-h-[520px] max-h-[820px] px-44 pt-32 subpixel-antialiased mx-auto">
-            <h1 className="text-white text-2xl text-center font-bold underline">
+            <h1 className="text-white text-3xl text-center font-bold">
                 Experience
             </h1>
             <div className="flex items-center justify-center py-5 space-x-8">
