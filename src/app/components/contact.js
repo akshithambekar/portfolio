@@ -75,7 +75,7 @@ export default function Contact() {
                 />
                 <button 
                     type="submit"
-                    className="bg-[#112240] text-gray-300 py-3 px-6 max-w-[200px] rounded-lg border border-gray-700 hover:bg-[#1d3b75] transition-colors duration-300 disabled:opacity-50"
+                    className="bg-[#112240] text-gray-300 py-3 px-6 rounded-lg border border-gray-700 hover:bg-[#1d3b75] transition-colors duration-300 disabled:opacity-50"
                     disabled={buttonText === 'Sending...'}
                 >
                     {buttonText}
