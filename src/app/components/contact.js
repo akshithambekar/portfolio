@@ -48,7 +48,7 @@ export default function Contact() {
             <h1 className="text-white text-3xl text-center font-bold pb-8">Contact Me</h1>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
                 <input
-                    name="user_name"
+                    name="name"
                     type="text"
                     value={formDetails.name}
                     placeholder="Name"
@@ -57,7 +57,7 @@ export default function Contact() {
                     required
                 />
                 <input
-                    name="user_email"
+                    name="email"
                     type="email"
                     value={formDetails.email}
                     placeholder="Email"
