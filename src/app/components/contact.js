@@ -44,7 +44,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="max-w-[700px] h-[500px] text-custom_gray mx-auto px-4 py-8">
+        <div className="max-w-[600px] h-[500px] text-custom_gray mx-auto px-4 py-8">
             <h1 className="text-white text-3xl text-center font-bold pb-8">Contact Me</h1>
             <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
                 <input
