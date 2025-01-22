@@ -60,9 +60,9 @@ export default function Intro() {
                 <h1 className="text-5xl text-white text-center font-bold drop-shadow-2xl">
                     <TypewriterAnimation text="Hi, I'm Akshith." typingSpeed={0.075} />
                 </h1>
-                <p className="pt-6 text-lg text-center max-w-[800px]">I'm a software engineer studying computer science at George Mason University, fueled by a passion for tackling intricate problems and building solutions that simplify everyday life.</p>
-                <p className="pt-6 text-lg text-center max-w-[800px]">When I'm not building cool stuff at my computer, I spend time keeping fit, sim-racing, and being an amateur photographer.</p>
-                <Image src="/IMG_6646.jpg" alt="My picture" width={600} height={200} className="pt-12 py-16 rounded-lg"/>
+                <p className="pt-6 text-lg text-center max-w-[730px]">I'm a software engineer studying computer science at George Mason University, fueled by a passion for building low-cost solutions that can revolutionize everyday life.</p>
+                <p className="pt-6 text-lg text-center max-w-[730px]">When I'm not building cool stuff at my computer, I spend time keeping fit, sim-racing, and being an amateur photographer.</p>
+                <Image src="/IMG_6646.jpg" alt="My picture" width={600} height={200} className="pt-10 pb-20 border-radius rounded-lg"/>
             </div>
         </div>
     );
