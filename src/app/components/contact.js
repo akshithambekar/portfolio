@@ -44,16 +44,16 @@ export default function Contact() {
     };
 
     return (
-        <div className="max-w-[600px] h-[500px] text-custom_gray mx-auto px-4 py-8">
-            <h1 className="text-white text-3xl text-center font-bold pb-8">Contact Me</h1>
-            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+        <div className="w-full max-w-[600px] min-h-[500px] text-custom_gray mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <h1 className="text-white text-2xl sm:text-3xl text-center font-bold pb-6 sm:pb-8">Contact Me</h1>
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 sm:gap-6">
                 <input
                     name="name"
                     type="text"
                     value={formDetails.name}
                     placeholder="Name"
                     onChange={(e) => onFormUpdate('name', e.target.value)}
-                    className="p-3 rounded-lg bg-[#112240] border border-gray-700 focus:border-gray-500 focus:outline-none placeholder-gray-500"
+                    className="p-3 sm:p-4 rounded-lg bg-[#112240] border border-gray-700 focus:border-gray-500 focus:outline-none placeholder-gray-500 text-sm sm:text-base"
                     required
                 />
                 <input
@@ -62,7 +62,7 @@ export default function Contact() {
                     value={formDetails.email}
                     placeholder="Email"
                     onChange={(e) => onFormUpdate('email', e.target.value)}
-                    className="p-3 rounded-lg bg-[#112240] border border-gray-700 focus:border-gray-500 focus:outline-none placeholder-gray-500"
+                    className="p-3 sm:p-4 rounded-lg bg-[#112240] border border-gray-700 focus:border-gray-500 focus:outline-none placeholder-gray-500 text-sm sm:text-base"
                     required
                 />
                 <textarea
@@ -70,12 +70,12 @@ export default function Contact() {
                     value={formDetails.message}
                     placeholder="Message"
                     onChange={(e) => onFormUpdate('message', e.target.value)}
-                    className="p-3 rounded-lg bg-[#112240] border border-gray-700 focus:border-gray-500 focus:outline-none placeholder-gray-500 h-32 resize-none"
+                    className="p-3 sm:p-4 rounded-lg bg-[#112240] border border-gray-700 focus:border-gray-500 focus:outline-none placeholder-gray-500 h-32 sm:h-40 resize-none text-sm sm:text-base"
                     required
                 />
                 <button 
                     type="submit"
-                    className="bg-[#112240] text-gray-300 py-3 px-6 rounded-lg border border-gray-700 hover:bg-[#1d3b75] transition-colors duration-300 disabled:opacity-50"
+                    className="bg-[#112240] text-gray-300 py-3 sm:py-4 px-6 rounded-lg border border-gray-700 hover:bg-[#1d3b75] transition-colors duration-300 disabled:opacity-50 text-sm sm:text-base font-medium"
                     disabled={buttonText === 'Sending...'}
                 >
                     {buttonText}

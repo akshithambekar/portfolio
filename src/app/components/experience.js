@@ -52,6 +52,23 @@ const WorkSection = () => {
                     <div className="flex flex-row items-center">
                         <BsCalendar className="text-gray-500" />
                         <div className="flex flex-row items-center pl-2 text-sm font-normal text-gray-400 dark:text-gray-500">
+                            <span>May 2025</span>
+                            <BsArrowRight className="mx-1" />
+                            <span>Present</span>
+                        </div>
+                    </div>
+                    <h3 className="text-lg pt-1 font-semibold text-gray-900 dark:text-white">
+                        Software Engineer Intern
+                    </h3>
+                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                        Allwyn Corporation
+                    </p>
+                </li>
+                <li className="mb-10 ms-4">
+                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                    <div className="flex flex-row items-center">
+                        <BsCalendar className="text-gray-500" />
+                        <div className="flex flex-row items-center pl-2 text-sm font-normal text-gray-400 dark:text-gray-500">
                             <span>October 2024</span>
                             <BsArrowRight className="mx-1" />
                             <span>Present</span>
@@ -61,7 +78,7 @@ const WorkSection = () => {
                         Undergraduate Research Assistant
                     </h3>
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                        George Mason University
+                        George Mason University - CCI Cyber Innovation Lab
                     </p>
                 </li>
                 <li className="mb-10 ms-4">
@@ -110,30 +127,30 @@ export default function Experience() {
         setActiveCategory("education");
     }, []);
     return (
-        <div className="max-w-[1260px] justify-center items-center min-h-[520px] max-h-[820px] px-44 pt-32 subpixel-antialiased mx-auto">
-            <h1 className="text-white text-3xl text-center font-bold">
+        <div className="max-w-[1260px] justify-center items-center min-h-[520px] max-h-[820px] px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 pt-16 md:pt-32 subpixel-antialiased mx-auto">
+            <h1 className="text-white text-2xl sm:text-3xl text-center font-bold">
                 Experience
             </h1>
-            <div className="flex items-center justify-center py-5 space-x-8">
-                <button
-                    onClick={() => setActiveCategory("education")}
-                    className={`font-semibold px-4 py-2 rounded-full transition-colors ${
-                        activeCategory === "education"
-                            ? "bg-gray-800 text-white"
-                            : "text-custom_gray hover:text-white"
-                    }`}
-                >
-                    Education
-                </button>
+            <div className="flex items-center justify-center py-5 space-x-4 sm:space-x-8">
                 <button
                     onClick={() => setActiveCategory("work")}
-                    className={`font-semibold px-4 py-2 rounded-full transition-colors ${
+                    className={`font-semibold px-3 sm:px-4 py-2 rounded-full transition-colors text-sm sm:text-base ${
                         activeCategory === "work"
                             ? "bg-gray-800 text-white"
                             : "text-custom_gray hover:text-white"
                     }`}
                 >
                     Work
+                </button>
+                <button
+                    onClick={() => setActiveCategory("education")}
+                    className={`font-semibold px-3 sm:px-4 py-2 rounded-full transition-colors text-sm sm:text-base ${
+                        activeCategory === "education"
+                            ? "bg-gray-800 text-white"
+                            : "text-custom_gray hover:text-white"
+                    }`}
+                >
+                    Education
                 </button>
             </div>
             {activeCategory === "education" && <EducationSection />}

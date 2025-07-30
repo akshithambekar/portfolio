@@ -9,99 +9,169 @@ export default function Projects() {
         <div>
             <Cursor />
             <Navbar />
-            <div className="grid grid-flow-row text-custom_gray items-baseline h-60 subpixel-antialiased max-w-[1260px] px-44 mx-auto">
-                <div className="flex flex-row items-start justify-between">
-                    <div className="max-w-[560px]">
-                        <div className="flex max-w-[560px] items-center">
-                            <Link href="https://github.com/akshithambekar/parkit" target="_blank" className="text-lg font-semibold underline decoration-1 pl-4 pr-2 text-gray-100 hover:text-white">ParkIt</Link>
-                            <BsGithub />
-                            <div className="flex flex-row pl-3 space-x-2">
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+
+            {/* ParkIt Project */}
+            <div className="text-custom_gray min-h-[400px] subpixel-antialiased max-w-[1260px] px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 mx-auto mb-8 sm:mb-8 lg:mb-6">
+                <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-8">
+                    <div className="w-full lg:max-w-[560px]">
+                        <div className="flex flex-col sm:flex-row sm:max-w-[560px] items-start sm:items-center gap-2 sm:gap-0">
+                            <div className="flex items-center">
+                                <Link
+                                    href="https://github.com/akshithambekar/parkit"
+                                    target="_blank"
+                                    className="text-lg font-semibold underline decoration-1 pl-0 sm:pl-4 pr-2 text-gray-100 hover:text-white"
+                                >
+                                    ParkIt
+                                </Link>
+                                <BsGithub />
+                            </div>
+                            <div className="flex flex-wrap pl-0 sm:pl-3 gap-2">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     JavaScript
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     Node.js
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     Express.js
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     HTML/CSS
                                 </p>
                             </div>
                         </div>
-                        <p className="text-sm px-4 mt-2">
-                            Developed at HackTJ 10.0, ParkIt is a web application designed to help users find parking in congested areas. Using a live Google Maps interface, this app integrates the
-                            Google Maps and Next Parking Lot APIs to identify parking areas near the user's current location or a specified destination. After a location is provided, ParkIt fetches
-                            data from the APIs to generate markers representing parking spots on the map. Each marker is linked to a Google Maps directions query that offers directions and more
+                        <p className="text-sm px-0 sm:px-4 mt-4">
+                            Developed at HackTJ 10.0, ParkIt is a web
+                            application designed to help users find parking in
+                            congested areas. Using a live Google Maps interface,
+                            this app integrates the Google Maps and Next Parking
+                            Lot APIs to identify parking areas near the user's
+                            current location or a specified destination. After a
+                            location is provided, ParkIt fetches data from the
+                            APIs to generate markers representing parking spots
+                            on the map. Each marker is linked to a Google Maps
+                            directions query that offers directions and more
                             details about the parking spot.
                         </p>
                     </div>
-                    <div className="flex w-[400px] items-center justify-center px-8">
-                        <Link href="https://youtu.be/fvdOhyDX81I" target="_blank">
-                            <Image src="/parkit-demo.png" alt="ParkIt demo" width={500} height={300} className="hover:opacity-65 object-contain shadow-2xl"/>
+                    <div className="w-full lg:w-[400px] flex items-center justify-center px-0 lg:px-8">
+                        <Link
+                            href="https://youtu.be/fvdOhyDX81I"
+                            target="_blank"
+                            className="block w-full max-w-[400px]"
+                        >
+                            <Image
+                                src="/parkit-demo.png"
+                                alt="ParkIt demo"
+                                width={500}
+                                height={300}
+                                className="w-full h-auto hover:opacity-65 object-contain shadow-2xl"
+                            />
                         </Link>
                     </div>
                 </div>
             </div>
-            <div className="grid grid-flow-row text-custom_gray items-baseline h-60 subpixel-antialiased max-w-[1260px] px-44 mx-auto">
-                <div className="flex flex-row items-start justify-between">
-                    <div className="max-w-[560px]">
-                        <div className="flex max-w-[560px] items-center">
-                            <Link href="https://github.com/akshithambekar/tesla-license-plate-detection" target="_blank" className="text-lg font-semibold underline decoration-1 pl-4 pr-2 text-gray-100 hover:text-white">Tesla License Plate Detection</Link>
-                            <BsGithub />
-                            <div className="flex flex-row pl-3 space-x-2">
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+
+            {/* Tesla License Plate Detection Project */}
+            <div className="text-custom_gray min-h-[400px] subpixel-antialiased max-w-[1260px] px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 mx-auto mb-8 sm:mb-8 lg:mb-6">
+                <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-8">
+                    <div className="w-full lg:max-w-[560px]">
+                        <div className="flex flex-col sm:flex-row sm:max-w-[560px] items-start sm:items-center gap-2 sm:gap-0">
+                            <div className="flex items-center">
+                                <Link
+                                    href="https://github.com/akshithambekar/tesla-license-plate-detection"
+                                    target="_blank"
+                                    className="text-lg font-semibold underline decoration-1 pl-0 sm:pl-4 pr-2 text-gray-100 hover:text-white"
+                                >
+                                    Tesla License Plate Detection
+                                </Link>
+                                <BsGithub />
+                            </div>
+                            <div className="flex flex-wrap pl-0 sm:pl-3 gap-2">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     Python
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     OpenCV
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     YOLOv8
                                 </p>
                             </div>
                         </div>
-                        <p className="text-sm px-4 mt-2">
-                            For my senior project at TJHSST, I developed a license plate detection algorithm tailored towards the low-resolution camera systems of Tesla vehicles manufactured before 2023.
-                            Using a YOLOv8 model trained with over 10000 images of license plates, the algorithm detects plates in dashcam footage and enhances clarity using OpenCV's edge detection, hysteresis, 
-                            and non-max suppression techniques. The processed image is passed to the EasyOCR optical character recognition library to correctly identify the letters on the license plate, 
-                            and is displayed in real-time on the original video.
+                        <p className="text-sm px-0 sm:px-4 mt-4">
+                            For my senior project at TJHSST, I developed a
+                            license plate detection algorithm tailored towards
+                            the low-resolution camera systems of Tesla vehicles
+                            manufactured before 2023. Using a YOLOv8 model
+                            trained with over 10000 images of license plates,
+                            the algorithm detects plates in dashcam footage and
+                            enhances clarity using OpenCV's edge detection,
+                            hysteresis, and non-max suppression techniques. The
+                            processed image is passed to the EasyOCR optical
+                            character recognition library to correctly identify
+                            the letters on the license plate, and is displayed
+                            in real-time on the original video.
                         </p>
                     </div>
-                    <div className="flex w-[400px] items-center justify-center px-8">
-                        <Image src="/license_plate_demo.png" alt="License plate demo" width={500} height={300} className="object-contain shadow-2xl"/>
+                    <div className="w-full lg:w-[400px] flex items-center justify-center px-0 lg:px-8">
+                        <div className="w-full max-w-[400px]">
+                            <Image
+                                src="/license_plate_demo.png"
+                                alt="License plate demo"
+                                width={500}
+                                height={300}
+                                className="w-full h-auto object-contain shadow-2xl"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="grid grid-flow-row text-custom_gray items-baseline h-60 subpixel-antialiased max-w-[1260px] px-44 mx-auto">
-                <div className="flex flex-row items-start justify-between">
-                    <div className="max-w-[560px]">
-                        <div className="flex max-w-[560px] items-center">
-                            <Link href="https://github.com/akshithambekar/portfolio" target="_blank" className="text-lg font-semibold underline decoration-1 pl-4 pr-2 text-gray-100 hover:text-white">Portfolio</Link>
-                            <BsGithub />
-                            <div className="flex flex-row pl-3 space-x-2">
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+
+            {/* Portfolio Project */}
+            <div className="text-custom_gray min-h-[400px] subpixel-antialiased max-w-[1260px] px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 mx-auto mb-8 sm:mb-8 lg:mb-0">
+                <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-8">
+                    <div className="w-full lg:max-w-[560px]">
+                        <div className="flex flex-col sm:flex-row sm:max-w-[560px] items-start sm:items-center gap-2 sm:gap-0">
+                            <div className="flex items-center">
+                                <Link
+                                    href="https://github.com/akshithambekar/portfolio"
+                                    target="_blank"
+                                    className="text-lg font-semibold underline decoration-1 pl-0 sm:pl-4 pr-2 text-gray-100 hover:text-white"
+                                >
+                                    Portfolio
+                                </Link>
+                                <BsGithub />
+                            </div>
+                            <div className="flex flex-wrap pl-0 sm:pl-3 gap-2">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     Next.js
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     Tailwind CSS
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     JavaScript
                                 </p>
-                                <p className="px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
+                                <p className="px-2 sm:px-3 py-1 text-xs rounded-full transition-colors bg-gray-800 text-custom_gray">
                                     HTML
                                 </p>
                             </div>
                         </div>
-                        <p className="text-sm px-4 mt-2">
-                            Personal portfolio displaying my experience, skills, and projects.
+                        <p className="text-sm px-0 sm:px-4 mt-4">
+                            Personal portfolio displaying my experience, skills,
+                            and projects.
                         </p>
                     </div>
-                    <div className="flex w-[348px] items-center justify-center grow-0 px-8">
-                        <Link href="/">
-                            <Image src="/portfolio.png" alt="Portfolio thumbnail" width={500} height={300} className="hover:opacity-65 object-contain shadow-2xl grow-0"/>
+                    <div className="w-full lg:w-[348px] flex items-center justify-center px-0 lg:px-8">
+                        <Link href="/" className="block w-full max-w-[348px]">
+                            <Image
+                                src="/portfolio.png"
+                                alt="Portfolio thumbnail"
+                                width={500}
+                                height={300}
+                                className="w-full h-auto hover:opacity-65 object-contain shadow-2xl"
+                            />
                         </Link>
                     </div>
                 </div>
