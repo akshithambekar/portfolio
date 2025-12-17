@@ -2,11 +2,30 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
     const pathName = usePathname();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [theme, setTheme] = useState("dark");
+
+    useEffect(() => {
+        // Check system preference on mount
+        const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        setTheme(isDark ? "dark" : "light");
+    }, []);
+
+    const toggleTheme = () => {
+        const newTheme = theme === "dark" ? "light" : "dark";
+        setTheme(newTheme);
+
+        // Apply theme to document
+        if (newTheme === "dark") {
+            document.documentElement.style.setProperty("color-scheme", "dark");
+        } else {
+            document.documentElement.style.setProperty("color-scheme", "light");
+        }
+    };
 
     return (
         <div className="flex flex-shrink-0 text-custom_gray justify-between items-center h-40 max-w-[1280px] mx-auto px-4 sm:px-8 md:px-16 lg:px-24 xl:px-48">
@@ -14,8 +33,8 @@ export default function Navbar() {
                 href="/"
                 className={
                     pathName === "/"
-                        ? "text-xl sm:text-2xl drop-shadow-md font-bold text-nowrap subpixel-antialiased text-white"
-                        : "text-xl sm:text-2xl drop-shadow-md font-bold text-nowrap subpixel-antialiased hover:text-white"
+                        ? "text-5xl sm:text-2xl drop-shadow-md font-bold text-nowrap subpixel-antialiased hover:text-white"
+                        : "text-5xl sm:text-2xl drop-shadow-md font-bold text-nowrap subpixel-antialiased hover:text-white"
                 }
             >
                 <span className="hidden sm:inline">Akshith Ambekar</span>
@@ -48,6 +67,12 @@ export default function Navbar() {
                 >
                     github
                 </Link>
+                <button
+                    onClick={toggleTheme}
+                    className="p-3 italic subpixel-antialiased hover:text-white"
+                >
+                    {theme === "dark" ? "light" : "dark"}
+                </button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -105,6 +130,15 @@ export default function Navbar() {
                         >
                             github
                         </Link>
+                        <button
+                            onClick={() => {
+                                toggleTheme();
+                                setIsMobileMenuOpen(false);
+                            }}
+                            className="px-4 py-3 italic subpixel-antialiased hover:text-white text-left"
+                        >
+                            {theme === "dark" ? "light" : "dark"}
+                        </button>
                     </div>
                 </div>
             )}
