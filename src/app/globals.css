@@ -5,6 +5,7 @@
 body {
     background-color: #10100E;
     color: #FFFFE3;
+    transition: background-color 300ms ease, color 300ms ease;
 }
 
 :root[style*="color-scheme: light"] body {
@@ -12,14 +13,16 @@ body {
     color: #1A1A14;
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #f0f0e4;
-        color: #1A1A14;
-    }
-}
-
 :root[style*="color-scheme: dark"] body {
     background-color: #10100E;
     color: #FFFFE3;
 }
+
+@media (prefers-color-scheme: light) {
+    :root:not([style*="color-scheme"]) body {
+        background-color: #f0f0e4;
+        color: #1a1a14;
+    }
+}
+
+/* icons: https://lucide.dev/ */
