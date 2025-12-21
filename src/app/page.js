@@ -1,12 +1,8 @@
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-
 export default function Home() {
     return (
         <main className="subpixel-antialiased">
-            <div>
-                <Navbar />
-                <Footer />
+            <div className="max-w-[860px] justify-center items-center flex mx-auto">
+                <p className="text-xl">Fake text for now.</p>
             </div>
         </main>
     );
