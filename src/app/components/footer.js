@@ -8,25 +8,25 @@ export default function Footer() {
             <div className="flex flex-row items-center space-x-1 text-xs sm:text-sm text-center opacity-100 whitespace-nowrap">
                 <Link
                     href="https://github.com/akshithambekar"
-                    className="relative group flex-shrink-0 text-2xl hover:opacity-100 opacity-80"
+                    className="relative group flex-shrink-0 text-2xl hover:opacity-100 opacity-80 transition-opacity duration-300"
                     target="_blank"
                 >
                     <Github />
                     <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100" />
                 </Link>
-                <span className="mx-3 px-1 opacity-60">·</span>
+                <span className="mx-3 px-1 opacity-60 text-2xl">·</span>
                 <Link
                     href="https://www.linkedin.com/in/akshith-ambekar/"
-                    className="relative group flex-shrink-0 text-2xl hover:opacity-100 opacity-80"
+                    className="relative group flex-shrink-0 text-2xl hover:opacity-100 opacity-80 transition-opacity duration-300"
                     target="_blank"
                 >
                     <Linkedin />
                     <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100" />
                 </Link>
-                <span className="mx-3 px-1 opacity-60">·</span>
+                <span className="mx-3 px-1 opacity-60 text-2xl">·</span>
                 <Link
                     href="https://x.com/akshithambekar"
-                    className="relative group flex-shrink-0 text-2xl hover:opacity-100 opacity-80"
+                    className="relative group flex-shrink-0 text-2xl hover:opacity-100 opacity-80 transition-opacity duration-300"
                     target="_blank"
                 >
                     <TwitterX />

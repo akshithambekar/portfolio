@@ -43,8 +43,8 @@ export default function Navbar() {
 
     return (
         <header className="max-w-[860px] mx-auto">
-            <div className="flex items-center justify-center h-24 mt-20">
-                <span className="hidden sm:inline text-5xl font-black">
+            <div className="flex items-center justify-center h-20 mt-20">
+                <span className="hidden sm:inline text-4xl font-black">
                     Akshith Ambekar
                 </span>
             </div>
@@ -52,7 +52,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-8">
                     <Link
                         href="/"
-                        className={`relative group text-lg hover:opacity-100 ${
+                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
                             pathName == "/" ? "opacity-100" : "opacity-80"
                         }`}
                     >
@@ -67,7 +67,7 @@ export default function Navbar() {
                     </Link>
                     <Link
                         href="/work"
-                        className={`relative group text-lg hover:opacity-100 ${
+                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
                             pathName == "/work" ? "opacity-100" : "opacity-80"
                         }`}
                     >
@@ -82,7 +82,7 @@ export default function Navbar() {
                     </Link>
                     <Link
                         href="/projects"
-                        className={`relative group text-lg hover:opacity-100 ${
+                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
                             pathName == "/projects"
                                 ? "opacity-100"
                                 : "opacity-80"
@@ -99,7 +99,7 @@ export default function Navbar() {
                     </Link>
                     <Link
                         href="/photos"
-                        className={`relative group text-lg hover:opacity-100 ${
+                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
                             pathName == "/photos" ? "opacity-100" : "opacity-80"
                         }`}
                     >
@@ -114,7 +114,7 @@ export default function Navbar() {
                     </Link>
                     <Link
                         href="/contact"
-                        className={`relative group text-lg hover:opacity-100 ${
+                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
                             pathName == "/contact"
                                 ? "opacity-100"
                                 : "opacity-80"
@@ -135,7 +135,7 @@ export default function Navbar() {
                         size={20}
                         className={`transition-all duration-300 ${
                             theme === "dark"
-                                ? "opacity-100 rotate-0 scale-100"
+                                ? "opacity-80 hover:opacity-100 transition-opacity duration-300 rotate-0 scale-100"
                                 : "opacity-0 rotate-90 scale-75"
                         }`}
                     />
@@ -143,7 +143,7 @@ export default function Navbar() {
                         size={20}
                         className={`absolute inset-0 transition-all duration-300 ${
                             theme === "light"
-                                ? "opacity-100 rotate-0 scale-100"
+                                ? "opacity-80 hover:opacity-100 transition-opacity duration-300 rotate-0 scale-100"
                                 : "opacity-0 -rotate-90 scale-75"
                         }`}
                     />
