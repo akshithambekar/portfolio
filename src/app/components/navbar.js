@@ -13,14 +13,20 @@ export default function Navbar() {
         const savedTheme = localStorage.getItem("theme");
         if (savedTheme) {
             setTheme(savedTheme);
-            document.documentElement.style.setProperty("color-scheme", savedTheme);
+            document.documentElement.style.setProperty(
+                "color-scheme",
+                savedTheme
+            );
         } else {
             const isDark = window.matchMedia(
                 "(prefers-color-scheme: dark)"
             ).matches;
             const defaultTheme = isDark ? "dark" : "light";
             setTheme(defaultTheme);
-            document.documentElement.style.setProperty("color-scheme", defaultTheme);
+            document.documentElement.style.setProperty(
+                "color-scheme",
+                defaultTheme
+            );
         }
     }, []);
 
@@ -37,11 +43,10 @@ export default function Navbar() {
 
     return (
         <header className="max-w-[860px] mx-auto">
-            <div className="flex items-center justify-center h-32 mt-20">
-                <Link href="/" className="text-5xl font-black text-nowrap">
-                    <span className="hidden sm:inline">Akshith Ambekar</span>
-                    <span className="sm:hidden">Akshith</span>
-                </Link>
+            <div className="flex items-center justify-center h-24 mt-20">
+                <span className="hidden sm:inline text-5xl font-black">
+                    Akshith Ambekar
+                </span>
             </div>
             <nav className="flex justify-center items-center pb-6">
                 <div className="flex items-center gap-8">
@@ -53,7 +58,7 @@ export default function Navbar() {
                     >
                         home
                         <span
-                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center scale-x-0 opacity-0 transition-[transform,opacity] duration-300 ${
+                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
                                 pathName == "/"
                                     ? "scale-x-100 opacity-100"
                                     : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
@@ -68,7 +73,7 @@ export default function Navbar() {
                     >
                         work
                         <span
-                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center scale-x-0 opacity-0 transition-[transform,opacity] duration-300 ${
+                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
                                 pathName == "/work"
                                     ? "scale-x-100 opacity-100"
                                     : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
@@ -85,7 +90,7 @@ export default function Navbar() {
                     >
                         projects
                         <span
-                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center scale-x-0 opacity-0 transition-[transform,opacity] duration-300 ${
+                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
                                 pathName == "/projects"
                                     ? "scale-x-100 opacity-100"
                                     : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
@@ -100,7 +105,7 @@ export default function Navbar() {
                     >
                         photos
                         <span
-                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center scale-x-0 opacity-0 transition-[transform,opacity] duration-300 ${
+                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
                                 pathName == "/photos"
                                     ? "scale-x-100 opacity-100"
                                     : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
@@ -117,7 +122,7 @@ export default function Navbar() {
                     >
                         contact
                         <span
-                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center scale-x-0 opacity-0 transition-[transform,opacity] duration-300 ${
+                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
                                 pathName == "/contact"
                                     ? "scale-x-100 opacity-100"
                                     : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
@@ -144,7 +149,8 @@ export default function Navbar() {
                     />
                 </button>
             </nav>
-            <div className="border-b border-current opacity-50 mt-1 mx-auto max-w-lg"></div>
+            <div className="border-b border-current opacity-50 mt-1 mb-16 mx-auto max-w-lg"></div>
         </header>
     );
 }
+1;
