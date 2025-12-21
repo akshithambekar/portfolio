@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 body {
-    background-color: #061626;
-    cursor: none;
-  }
-  
-.custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
+    background-color: #10100E;
+    color: #FFFFE3;
+    transition: background-color 300ms ease, color 300ms ease;
 }
 
-* {
-    cursor: none;
+:root[style*="color-scheme: light"] body {
+    background-color: #FFFFF2;
+    color: #1A1A14;
 }
 
-button, a {
-    cursor: none;
+:root[style*="color-scheme: dark"] body {
+    background-color: #10100E;
+    color: #FFFFE3;
 }
+
+@media (prefers-color-scheme: light) {
+    :root:not([style*="color-scheme"]) body {
+        background-color: #f0f0e4;
+        color: #1a1a14;
+    }
+}
+
+/* icons: https://lucide.dev/ */
