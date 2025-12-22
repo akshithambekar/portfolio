@@ -66,21 +66,6 @@ export default function Navbar() {
                         />
                     </Link>
                     <Link
-                        href="/work"
-                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
-                            pathName == "/work" ? "opacity-100" : "opacity-80"
-                        }`}
-                    >
-                        work
-                        <span
-                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
-                                pathName == "/work"
-                                    ? "scale-x-100 opacity-100"
-                                    : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
-                            }`}
-                        />
-                    </Link>
-                    <Link
                         href="/projects"
                         className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
                             pathName == "/projects"
@@ -107,6 +92,23 @@ export default function Navbar() {
                         <span
                             className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
                                 pathName == "/photos"
+                                    ? "scale-x-100 opacity-100"
+                                    : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+                            }`}
+                        />
+                    </Link>
+                    <Link
+                        href="/thoughts"
+                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
+                            pathName == "/thoughts"
+                                ? "opacity-100"
+                                : "opacity-80"
+                        }`}
+                    >
+                        thoughts
+                        <span
+                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
+                                pathName == "/thoughts"
                                     ? "scale-x-100 opacity-100"
                                     : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
                             }`}

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
         <footer className="max-w-[860px] mx-auto">
-            <div className="flex flex-col justify-center items-center min-h-[60px] text-custom_gray px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 pt-12 sm:pt-24 subpixel-antialiased">
+            <div className="flex flex-col justify-center items-center min-h-[16px] text-custom_gray px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 pt-12 sm:pt-24 subpixel-antialiased">
                 <div className="flex flex-row items-center space-x-1 text-xs sm:text-sm text-center opacity-100 whitespace-nowrap">
                     <Link
                         href="https://github.com/akshithambekar"
