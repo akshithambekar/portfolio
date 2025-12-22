@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <main className="subpixel-antialiased">
             <div className="max-w-[512px] justify-center items-center flex flex-col mx-auto">
-                <p className="text-xl font-thin text-justify py-5">
+                <p className="text-xl font-thin text-justify pb-5">
                     hi, i'm akshith. i'm a software engineer studying cs at
                     george mason university. i love turning radical ideas into
                     reality.
@@ -18,8 +18,8 @@ export default function Home() {
                     >
                         microhealth
                     </Link>{" "}
-                    as a full-stack developer, enabling secure ai-powered
-                    workflows for government agencies.
+                    as a full-stack developer, working on an app that enables
+                    secure ai-powered workflows for government agencies.
                 </p>
                 <p className="text-xl font-thin text-justify py-5">
                     this summer, i'll be joining{" "}
@@ -36,13 +36,40 @@ export default function Home() {
                     previously, i've done:
                 </p>
                 <ul className="text-xl font-thin text-left list-disc list-outside space-y-2 self-start pl-5">
-                    <li>proof-of-concepts for amtrak @ allwyn corporation</li>
-                    <li>embedded software + iot research @ gmu</li>
-                    <li>ml research @ dartmouth-hitchcock medical center</li>
+                    <li>
+                        ai proof-of-concepts for amtrak @{" "}
+                        <Link
+                            className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                            href="https://www.allwyncorp.com/"
+                            target="_blank"
+                        >
+                            allwyn corp
+                        </Link>
+                    </li>
+                    <li>
+                        ml + embedded software/iot research @{" "}
+                        <Link
+                            className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                            href="https://cyberinitiative.org/about/regional-structure/northern-virginia-node/living-innovation-lab.html"
+                            target="_blank"
+                        >
+                            gmu
+                        </Link>
+                    </li>
+                    <li>
+                        ml research @{" "}
+                        <Link
+                            className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                            href="https://www.dartmouth-hitchcock.org/"
+                            target="_blank"
+                        >
+                            dartmouth-hitchcock medical center
+                        </Link>
+                    </li>
                 </ul>
                 <p className="text-xl font-thin text-justify pt-10">
                     i'm always open to opportunities, especially intern or
-                    full-time roles in SF or NYC.
+                    full-time roles in sf or nyc.
                 </p>
             </div>
         </main>

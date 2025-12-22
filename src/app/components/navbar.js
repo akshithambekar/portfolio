@@ -45,7 +45,7 @@ export default function Navbar() {
         <header className="max-w-[860px] mx-auto">
             <div className="flex items-center justify-center h-20 mt-20">
                 <span className="hidden sm:inline text-4xl font-black">
-                    Akshith Ambekar
+                    akshith ambekar
                 </span>
             </div>
             <nav className="flex justify-center items-center pb-6">
@@ -83,21 +83,6 @@ export default function Navbar() {
                         />
                     </Link>
                     <Link
-                        href="/photos"
-                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
-                            pathName == "/photos" ? "opacity-100" : "opacity-80"
-                        }`}
-                    >
-                        photos
-                        <span
-                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
-                                pathName == "/photos"
-                                    ? "scale-x-100 opacity-100"
-                                    : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
-                            }`}
-                        />
-                    </Link>
-                    <Link
                         href="/thoughts"
                         className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
                             pathName == "/thoughts"
@@ -109,6 +94,21 @@ export default function Navbar() {
                         <span
                             className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
                                 pathName == "/thoughts"
+                                    ? "scale-x-100 opacity-100"
+                                    : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+                            }`}
+                        />
+                    </Link>
+                    <Link
+                        href="/photos"
+                        className={`relative group text-lg hover:opacity-100 transition-opacity duration-300 ${
+                            pathName == "/photos" ? "opacity-100" : "opacity-80"
+                        }`}
+                    >
+                        photos
+                        <span
+                            className={`absolute left-0 -bottom-1 h-0.5 w-full bg-current origin-center transition-[transform,opacity] duration-300 ease-in-out ${
+                                pathName == "/photos"
                                     ? "scale-x-100 opacity-100"
                                     : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
                             }`}
@@ -151,7 +151,7 @@ export default function Navbar() {
                     />
                 </button>
             </nav>
-            <div className="border-b border-current opacity-50 mt-1 mb-16 mx-auto max-w-lg"></div>
+            <div className="border-b border-current opacity-50 mt-1 mb-8 mx-auto max-w-lg"></div>
         </header>
     );
 }
