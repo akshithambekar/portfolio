@@ -169,7 +169,7 @@ export default function ContactForm() {
                 )}
             </div>
 
-            <div className="flex justify-center pb-8">
+            <div className="flex justify-center pb-16">
                 <button
                     type="submit"
                     disabled={isSubmitting || submitStatus === "sent"}
