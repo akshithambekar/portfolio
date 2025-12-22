@@ -49,7 +49,7 @@ export default function Footer() {
                     <PiCopyrightLight className="flex-shrink-0" />
                     <p>
                         2025 Akshith Ambekar. All rights reserved. Last updated
-                        on December 21, 2025.
+                        on December 22, 2025.
                     </p>
                 </div>
             </div>

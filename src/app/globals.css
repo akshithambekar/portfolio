@@ -11,11 +11,13 @@ body {
 :root[style*="color-scheme: light"] body {
     background-color: #FFFFF2;
     color: #1A1A14;
+    --body-bg: #FFFFF2;
 }
 
 :root[style*="color-scheme: dark"] body {
     background-color: #10100E;
     color: #FFFFE3;
+    --body-bg: #10100E;
 }
 
 @media (prefers-color-scheme: light) {

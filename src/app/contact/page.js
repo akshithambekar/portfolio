@@ -12,21 +12,21 @@ export default function Home() {
                 </p>
                 <div className="flex flex-row gap-4 pb-8">
                     <Link
-                        className="text-xl underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                        className="text-xl underline underline-offset-2 font-thin hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
                         href="https://github.com/akshithambekar"
                         target="_blank"
                     >
                         github
                     </Link>
                     <Link
-                        className="text-xl underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                        className="text-xl underline underline-offset-2 font-thin hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
                         href="https://www.linkedin.com/in/akshith-ambekar/"
                         target="_blank"
                     >
                         linkedin
                     </Link>
                     <Link
-                        className="text-xl underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                        className="text-xl underline underline-offset-2 font-thin hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
                         href="https://x.com/akshithambekar"
                         target="_blank"
                     >

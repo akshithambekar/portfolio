@@ -8,7 +8,7 @@ export default function Home() {
             date: "december 2025",
             status: "in progress",
             description:
-                "a web application that generates an 3B1B-inspired explanation video based on textbook pages, lecture notes, or a prompt.",
+                "a web application that generates 3B1B-style videos to explain STEM topics based on textbook pages, lecture notes, or a prompt.",
             technologies: "next.js · python · langgraph",
             link: "https://github.com/akshithambekar/theorem",
         },

@@ -15,7 +15,7 @@ export default function ProjectCard({
             <div className="pl-4 flex-1">
                 <h3 className="text-2xl font-semibold pb-2">{title}</h3>
 
-                <div className="text-sm opacity-80 pb-2">
+                <div className="text-sm font-thin opacity-80 pb-2">
                     <span>{date}</span>
                     <span className="mx-2">·</span>
                     <span>{status}</span>
@@ -25,12 +25,14 @@ export default function ProjectCard({
                     {description}
                 </p>
 
-                <p className="text-sm opacity-80 pb-2">{technologies}</p>
+                <p className="text-sm opacity-80 font-thin pb-2">
+                    {technologies}
+                </p>
 
                 <Link
                     href={link}
                     target="_blank"
-                    className="w-fit opacity-80 bg-no-repeat bg-bottom bg-[length:100%_1px] bg-[linear-gradient(to_right,currentColor_96.5%,transparent_96.5%)] hover:font-normal hover:opacity-100 inline-flex items-center gap-1 transition-[transform,opacity] duration-300 hover:-translate-y-0.5 text-base"
+                    className="w-fit opacity-80 font-thin bg-no-repeat bg-bottom bg-[length:100%_1px] bg-[linear-gradient(to_right,currentColor_96.5%,transparent_96.5%)] hover:font-normal hover:opacity-100 inline-flex items-center gap-1 transition-[transform,opacity] duration-300 hover:-translate-y-0.5 text-base"
                 >
                     view project
                     <ArrowUpRight className="w-5 h-5" />
