@@ -64,29 +64,28 @@ export default function ContactForm() {
         setIsSubmitting(true);
         try {
             const templateParams = {
-                from_name: `${formData.firstName} ${formData.lastName}`,
-                from_email: formData.email,
+                name: `${formData.firstName} ${formData.lastName}`,
+                email: formData.email,
                 message: formData.message,
             };
 
             await emailjs.send(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+                process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
+                process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID,
                 templateParams,
-                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+                process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY
             );
 
             setSubmitStatus("sent");
+            setTimeout(() => {
+                setSubmitStatus("send");
+            }, 3000);
             setFormData({
                 firstName: "",
                 lastName: "",
                 email: "",
                 message: "",
             });
-
-            setTimeout(() => {
-                setSubmitStatus("send");
-            }, 3000);
         } catch (error) {
             console.error("Failed to send email:", error);
             setErrors({
