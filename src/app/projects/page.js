@@ -26,7 +26,7 @@ export default function Home() {
 
     return (
         <main className="subpixel-antialiased">
-            <div className="max-w-[512px] flex flex-col mx-auto">
+            <div className="max-w-[512px] flex flex-col mx-auto px-4 sm:px-0">
                 {projects.map((project) => (
                     <ProjectCard
                         key={project.id}
