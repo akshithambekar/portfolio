@@ -1,9 +1,11 @@
 import Link from "next/link";
 import ContactForm from "@/app/components/ContactForm";
+import PageTransition from "@/app/components/PageTransition";
 
 export default function Home() {
     return (
-        <main className="subpixel-antialiased">
+        <PageTransition>
+            <main className="subpixel-antialiased">
             <div className="max-w-[512px] justify-center items-center flex flex-col mx-auto px-4 sm:px-0">
                 <p className="text-lg md:text-xl font-thin text-justify pb-4 md:pb-8">
                     i'm always looking for new opportunities or discussing
@@ -36,5 +38,6 @@ export default function Home() {
                 <ContactForm />
             </div>
         </main>
+        </PageTransition>
     );
 }

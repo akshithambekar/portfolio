@@ -1,4 +1,5 @@
 import ProjectCard from "@/app/components/ProjectCard";
+import PageTransition from "@/app/components/PageTransition";
 
 export default function Home() {
     const projects = [
@@ -25,7 +26,8 @@ export default function Home() {
     ];
 
     return (
-        <main className="subpixel-antialiased">
+        <PageTransition>
+            <main className="subpixel-antialiased">
             <div className="max-w-[512px] flex flex-col mx-auto px-4 sm:px-0">
                 {projects.map((project) => (
                     <ProjectCard
@@ -40,5 +42,6 @@ export default function Home() {
                 ))}
             </div>
         </main>
+        </PageTransition>
     );
 }

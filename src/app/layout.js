@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/app/components/navbar";
-import Footer from "@/app/components/footer";
+import TransitionLayout from "@/app/components/TransitionLayout";
 
 export const hg = Host_Grotesk({
     subsets: ["latin"],
@@ -22,8 +22,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={`${hg.className} antialiased`}>
                 <Navbar />
-                {children}
-                <Footer />
+                <TransitionLayout>{children}</TransitionLayout>
                 <Analytics />
             </body>
         </html>

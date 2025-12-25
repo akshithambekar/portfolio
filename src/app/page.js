@@ -1,8 +1,10 @@
 import Link from "next/link";
+import PageTransition from "@/app/components/PageTransition";
 
 export default function Home() {
     return (
-        <main className="subpixel-antialiased">
+        <PageTransition>
+            <main className="subpixel-antialiased">
             <div className="max-w-[512px] justify-center items-center flex flex-col mx-auto px-4 sm:px-0">
                 <p className="text-lg md:text-xl font-thin text-justify pb-3 md:pb-5">
                     hi, i'm akshith. i'm a software engineer studying cs at
@@ -73,5 +75,6 @@ export default function Home() {
                 </p>
             </div>
         </main>
+        </PageTransition>
     );
 }

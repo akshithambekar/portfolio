@@ -1,7 +1,7 @@
 "use client";
 
-import { PiCopyrightLight } from "react-icons/pi";
 import { Github, Linkedin, TwitterX } from "react-bootstrap-icons";
+import { Copyright } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,9 +10,9 @@ export default function Footer() {
     const hideSocialIcons = pathname === "/contact";
 
     return (
-        <footer className="max-w-[860px] mx-auto">
+        <footer className="max-w-[860px] mx-auto px-4 sm:px-0">
             {!hideSocialIcons && (
-                <div className="flex flex-col justify-center items-center min-h-[16px] text-custom_gray px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 pt-8 sm:pt-12 md:pt-24 subpixel-antialiased">
+                <div className="flex flex-col justify-center items-center min-h-[16px] text-custom_gray px-0 sm:px-8 md:px-16 lg:px-24 xl:px-44 pt-8 sm:pt-12 md:pt-24 subpixel-antialiased">
                     <div className="flex flex-row items-center space-x-1 text-xs sm:text-sm text-center opacity-100 whitespace-nowrap">
                         <Link
                             href="https://github.com/akshithambekar"
@@ -48,9 +48,11 @@ export default function Footer() {
                 </div>
             )}
             <div className="border-b border-current opacity-50 mt-4 mb-4 mx-auto max-w-lg"></div>
-            <div className="flex flex-col justify-center items-center text-custom_gray px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 pb-6 sm:pb-8 md:pb-10 subpixel-antialiased">
+            <div className="flex flex-col justify-center items-center text-custom_gray px-0 sm:px-8 md:px-16 lg:px-24 xl:px-44 pb-6 sm:pb-8 md:pb-10 subpixel-antialiased">
                 <p className="text-xs sm:text-sm text-center opacity-80 sm:whitespace-nowrap">
-                    <PiCopyrightLight className="inline-block align-middle mr-1" />2025 Akshith Ambekar. All rights reserved. Last updated on December 24, 2025.
+                    <Copyright className="inline-block w-3 h-3 sm:w-3.5 sm:h-3.5 align-middle mr-1 relative -top-[1.5px]" />
+                    2025 Akshith Ambekar. All rights reserved. Last updated on
+                    December 24, 2025.
                 </p>
             </div>
         </footer>

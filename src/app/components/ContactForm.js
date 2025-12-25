@@ -162,7 +162,7 @@ export default function ContactForm() {
                     className="w-full bg-transparent border border-current text-lg md:text-xl font-thin py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none resize-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current overflow-y-auto [&::-webkit-scrollbar]:w-[3px] [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-current [&::-webkit-scrollbar-thumb]:opacity-50 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:border [&::-webkit-scrollbar-thumb]:border-transparent [&::-webkit-scrollbar-thumb]:bg-clip-padding"
                 />
                 {errors.message && (
-                    <p className="text-xs md:text-sm text-red-500/80 dark:text-red-400/80 pt-1">
+                    <p className="text-xs md:text-sm text-red-500/80 dark:text-red-400/80">
                         {errors.message}
                     </p>
                 )}

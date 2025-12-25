@@ -44,9 +44,7 @@ export default function Navbar() {
     return (
         <header className="max-w-[860px] mx-auto px-4 sm:px-0">
             <div className="flex items-center justify-center h-20 mt-12 md:mt-20">
-                <span className="text-4xl font-black">
-                    akshith ambekar
-                </span>
+                <span className="text-4xl font-black">akshith ambekar</span>
             </div>
             <nav className="flex justify-center items-center pb-6">
                 <div className="flex items-center gap-4 md:gap-8">
@@ -153,4 +151,3 @@ export default function Navbar() {
         </header>
     );
 }
-1;
