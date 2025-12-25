@@ -49,12 +49,8 @@ export default function Footer() {
             )}
             <div className="border-b border-current opacity-50 mt-4 mb-4 mx-auto max-w-lg"></div>
             <div className="flex flex-col justify-center items-center text-custom_gray px-4 sm:px-8 md:px-16 lg:px-24 xl:px-44 pb-6 sm:pb-8 md:pb-10 subpixel-antialiased">
-                <p className="flex flex-row items-center gap-1 text-xs sm:text-sm text-center opacity-80 sm:whitespace-nowrap">
-                    <PiCopyrightLight className="flex-shrink-0" />
-                    <span>
-                        2025 Akshith Ambekar. All rights reserved. Last updated
-                        on December 24, 2025.
-                    </span>
+                <p className="text-xs sm:text-sm text-center opacity-80 sm:whitespace-nowrap">
+                    <PiCopyrightLight className="inline-block align-middle mr-1" />2025 Akshith Ambekar. All rights reserved. Last updated on December 24, 2025.
                 </p>
             </div>
         </footer>
