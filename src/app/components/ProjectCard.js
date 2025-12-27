@@ -13,7 +13,9 @@ export default function ProjectCard({
         <div className="py-3 md:py-5 flex">
             <div className="w-px bg-current opacity-25"></div>
             <div className="pl-4 flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold pb-2">{title}</h3>
+                <h3 className="text-xl md:text-2xl font-semibold pb-2">
+                    {title}
+                </h3>
 
                 <div className="text-xs md:text-sm font-thin opacity-80 pb-2">
                     <span>{date}</span>

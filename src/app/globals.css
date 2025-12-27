@@ -5,6 +5,7 @@
 body {
     background-color: #10100E;
     color: #FFFFE3;
+    letter-spacing: 0.02em;
     transition: background-color 300ms ease, color 300ms ease;
 }
 
