@@ -8,6 +8,9 @@ import { usePathname } from "next/navigation";
 export default function Footer() {
     const pathname = usePathname();
     const hideSocialIcons = pathname === "/contact";
+    const getCurrentYear = () => {
+        return new Date().getFullYear();
+    };
 
     return (
         <footer className="max-w-[860px] mx-auto px-4 sm:px-0">
@@ -51,8 +54,8 @@ export default function Footer() {
             <div className="flex flex-col justify-center items-center text-custom_gray px-0 sm:px-8 md:px-16 lg:px-24 xl:px-44 pb-6 sm:pb-8 md:pb-10 subpixel-antialiased">
                 <p className="text-xs sm:text-sm text-center opacity-80 sm:whitespace-nowrap">
                     <Copyright className="inline-block w-3 h-3 sm:w-3.5 sm:h-3.5 align-middle mr-1 relative -top-[1.5px]" />
-                    2026 Akshith Ambekar. All rights reserved. Last updated on
-                    Jan 1, 2026.
+                    {getCurrentYear()} Akshith Ambekar. All rights reserved.
+                    Last updated on Jan 1, 2026.
                 </p>
             </div>
         </footer>
