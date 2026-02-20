@@ -55,7 +55,7 @@ export default function Footer() {
                 <p className="text-xs sm:text-sm text-center opacity-80 sm:whitespace-nowrap">
                     <Copyright className="inline-block w-3 h-3 sm:w-3.5 sm:h-3.5 align-middle mr-1 relative -top-[1.5px]" />
                     {getCurrentYear()} Akshith Ambekar. All rights reserved.
-                    Last updated on Jan 1, 2026.
+                    Last updated on Feb 19, 2026.
                 </p>
             </div>
         </footer>
