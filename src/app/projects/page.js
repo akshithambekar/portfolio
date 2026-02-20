@@ -5,6 +5,36 @@ export default function Home() {
     const projects = [
         {
             id: 1,
+            title: "s24",
+            date: "february 2026",
+            status: "won best use of solana @ hackfax x patriothacks 2026",
+            description:
+                "a fully-autonomous trading agent built on openclaw that ingests live solana coin data, assesses risk and upside, and makes profitable trades on solana devnet.",
+            technologies: "aws · next.js · express.js · openclaw",
+            link: "https://github.com/akshithambekar/s24",
+        },
+        {
+            id: 2,
+            title: "prism",
+            date: "january 2026",
+            status: "finalist at cursor hackathon dc 2026",
+            description:
+                "a github app that spins up live PR previews, where users can click on react components and make quick changes with the opencode sdk.",
+            technologies: "next.js · hono · daytona · octokit · opencode sdk",
+            link: "https://github.com/akshithambekar/prism",
+        },
+        {
+            id: 3,
+            title: "logos",
+            date: "january 2026",
+            status: "submitted to hoyahacks 2026",
+            description:
+                "an sdk that defines and enforces context contracts between agentic systems by using agreement files, running automated tasks, and filtering content.",
+            technologies: "fastapi · langgraph · chromadb",
+            link: "https://github.com/akshithambekar/theorem",
+        },
+        {
+            id: 4,
             title: "theorem",
             date: "december 2025",
             status: "in progress",
@@ -14,7 +44,7 @@ export default function Home() {
             link: "https://github.com/akshithambekar/theorem",
         },
         {
-            id: 2,
+            id: 5,
             title: "breach",
             date: "march 2025",
             status: "submitted to hoohacks 2025",
@@ -28,20 +58,20 @@ export default function Home() {
     return (
         <PageTransition>
             <main className="subpixel-antialiased">
-            <div className="max-w-[512px] flex flex-col mx-auto px-4 sm:px-0">
-                {projects.map((project) => (
-                    <ProjectCard
-                        key={project.id}
-                        title={project.title}
-                        date={project.date}
-                        status={project.status}
-                        description={project.description}
-                        technologies={project.technologies}
-                        link={project.link}
-                    />
-                ))}
-            </div>
-        </main>
+                <div className="max-w-[512px] flex flex-col mx-auto px-4 sm:px-0">
+                    {projects.map((project) => (
+                        <ProjectCard
+                            key={project.id}
+                            title={project.title}
+                            date={project.date}
+                            status={project.status}
+                            description={project.description}
+                            technologies={project.technologies}
+                            link={project.link}
+                        />
+                    ))}
+                </div>
+            </main>
         </PageTransition>
     );
 }
