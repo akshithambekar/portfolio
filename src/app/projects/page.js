@@ -5,6 +5,16 @@ export default function Home() {
     const projects = [
         {
             id: 1,
+            title: "playbook",
+            date: "february 2026",
+            status: "won best use of airia @ self-improving agents hackathon",
+            description:
+                "an ai voice agent for sales/customer support that handles live calls, learns from customer sentiment, and continuously optimizes its strategy to improve future calls.",
+            technologies: "modulate · airia · elevenlabs · next.js",
+            link: "https://github.com/akshithambekar/playbook",
+        },
+        {
+            id: 2,
             title: "s24",
             date: "february 2026",
             status: "won best use of solana @ hackfax x patriothacks 2026",
@@ -14,7 +24,7 @@ export default function Home() {
             link: "https://github.com/akshithambekar/s24",
         },
         {
-            id: 2,
+            id: 3,
             title: "prism",
             date: "january 2026",
             status: "finalist at cursor hackathon dc 2026",
@@ -24,7 +34,7 @@ export default function Home() {
             link: "https://github.com/akshithambekar/prism",
         },
         {
-            id: 3,
+            id: 4,
             title: "logos",
             date: "january 2026",
             status: "submitted to hoyahacks 2026",
@@ -34,7 +44,7 @@ export default function Home() {
             link: "https://github.com/akshithambekar/theorem",
         },
         {
-            id: 4,
+            id: 5,
             title: "theorem",
             date: "december 2025",
             status: "in progress",
@@ -44,7 +54,7 @@ export default function Home() {
             link: "https://github.com/akshithambekar/theorem",
         },
         {
-            id: 5,
+            id: 6,
             title: "breach",
             date: "march 2025",
             status: "submitted to hoohacks 2025",
