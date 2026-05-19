@@ -12,19 +12,7 @@ export default function Home() {
                         into reality.
                     </p>
                     <p className="text-lg md:text-xl font-thin text-justify py-3 md:py-5">
-                        i'm currently interning at{" "}
-                        <Link
-                            className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
-                            href="https://www.microhealthllc.com/"
-                            target="_blank"
-                        >
-                            microhealth
-                        </Link>{" "}
-                        as a full-stack developer, working on secure ai-powered
-                        workflows for government agencies.
-                    </p>
-                    <p className="text-lg md:text-xl font-thin text-justify py-3 md:py-5">
-                        this summer, i'll be joining{" "}
+                        i'm currently working on ground software for satellites as an intern at {" "}
                         <Link
                             className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
                             href="https://www.lockheedmartin.com/en-us/index.html"
@@ -32,12 +20,22 @@ export default function Home() {
                         >
                             lockheed martin
                         </Link>
-                        's space division as a software engineer intern.
+                        's space division.
                     </p>
                     <p className="text-lg md:text-xl font-thin text-left pt-3 md:pt-5 pb-2 self-start">
                         previously, i've done:
                     </p>
-                    <ul className="text-lg md:text-xl font-thin text-left list-disc list-outside space-y-2 self-start pl-5">
+            <ul className="text-lg md:text-xl font-thin text-left list-disc list-outside space-y-2 self-start pl-5">
+                        <li>
+                            ai + full-stack engineering @ {" "}
+                            <Link
+                                className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                                href="https://www.microhealthllc.com/"
+                                target="_blank"
+                            >
+                              microhealth
+                            </Link>
+                        </li>
                         <li>
                             ai proof-of-concepts for amtrak @{" "}
                             <Link
