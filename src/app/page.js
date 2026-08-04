@@ -8,8 +8,7 @@ export default function Home() {
                 <div className="max-w-[512px] justify-center items-center flex flex-col mx-auto px-4 sm:px-0">
                     <p className="text-lg md:text-xl font-thin text-justify pb-3 md:pb-5">
                         hi, i'm akshith. i'm a software engineer studying cs at
-                        george mason university. i love turning radical ideas
-                        into reality.
+                        george mason university.
                     </p>
                     <p className="text-lg md:text-xl font-thin text-justify py-3 md:py-5">
                         i'm currently working on ground software for satellites as an intern at {" "}
