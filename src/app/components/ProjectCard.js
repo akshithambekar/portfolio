@@ -23,7 +23,7 @@ export default function ProjectCard({
                     <span>{status}</span>
                 </div>
 
-                <p className="text-lg md:text-xl font-normal text-justify pb-3">
+                <p className="text-lg md:text-xl font-normal text-left sm:text-justify pb-3">
                     {description}
                 </p>
 

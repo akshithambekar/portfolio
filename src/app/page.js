@@ -5,8 +5,8 @@ export default function Home() {
     return (
         <PageTransition>
             <main className="subpixel-antialiased">
-                <div className="max-w-[512px] justify-center items-center flex flex-col mx-auto px-4 sm:px-0">
-                    <p className="text-lg md:text-xl font-normal text-justify pb-3 md:pb-5">
+                <div className="max-w-[512px] justify-center items-center flex flex-col mx-auto px-6 sm:px-0">
+                    <p className="text-lg md:text-xl font-normal text-left sm:text-justify pb-3 md:pb-5">
                         i'm a full-stack software engineer, studying computer science at {' '}
                         <Link
                             className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
@@ -16,7 +16,7 @@ export default function Home() {
                           george mason university.
                         </Link>
                     </p>
-                    <p className="text-lg md:text-xl font-normal text-justify py-3 md:py-5">
+                    <p className="text-lg md:text-xl font-normal text-left sm:text-justify py-3 md:py-5">
                         i'm a software engineering intern at {" "}
                         <Link
                             className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
@@ -27,7 +27,7 @@ export default function Home() {
                         </Link>
                         's space division, where i'm currently working on software for automated satellite scheduling.
                     </p>
-                    <p className="text-lg md:text-xl font-normal text-justify py-3 md:py-5">
+                    <p className="text-lg md:text-xl font-normal text-left sm:text-justify py-3 md:py-5">
                         i'm also researching neuro-symbolic ai for maritime capture-the-flag with the {" "}
                         <Link
                             className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"

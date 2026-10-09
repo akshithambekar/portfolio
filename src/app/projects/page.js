@@ -48,7 +48,7 @@ export default function Home() {
     return (
         <PageTransition>
             <main className="subpixel-antialiased">
-                <div className="max-w-[512px] flex flex-col mx-auto px-4 sm:px-0">
+                <div className="max-w-[512px] flex flex-col mx-auto px-6 sm:px-0">
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.id}

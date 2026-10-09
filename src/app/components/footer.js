@@ -10,7 +10,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="max-w-[860px] mx-auto px-4 sm:px-0">
+        <footer className="max-w-[860px] mx-auto px-6 sm:px-0">
             <div className="flex flex-col justify-center items-center min-h-[16px] text-custom_gray px-0 sm:px-8 md:px-16 lg:px-24 xl:px-44 pt-[104px] subpixel-antialiased">
                 <div className="flex flex-row items-center space-x-1 text-xs sm:text-sm text-center opacity-100 whitespace-nowrap">
                     <Link

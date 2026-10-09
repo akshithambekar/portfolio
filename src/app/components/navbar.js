@@ -42,7 +42,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className="max-w-[860px] mx-auto px-4 sm:px-0">
+        <header className="max-w-[860px] mx-auto px-6 sm:px-0">
             <div className="flex items-center justify-center h-20 mt-12 md:mt-20">
                 <span className="text-4xl font-black">akshith ambekar</span>
             </div>
