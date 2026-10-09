@@ -42,7 +42,7 @@ export default function Home() {
                     <p className="text-lg md:text-xl font-normal text-justify sm:text-left pt-3 md:pt-5 pb-2 self-start">
                         previously, i've done:
                     </p>
-            <ul className="text-lg md:text-xl font-normal text-justify sm:text-left list-disc list-outside space-y-2 self-start pl-5">
+            <ul className="text-lg md:text-xl font-normal text-left list-disc list-outside space-y-2 self-start pl-5">
                         <li>
                             ai + full-stack engineering @ {" "}
                             <Link
