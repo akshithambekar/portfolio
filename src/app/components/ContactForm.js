@@ -97,7 +97,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="w-full pt-3 md:pt-4">
+        <form onSubmit={handleSubmit} className="w-full md:pt-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 md:gap-y-4 pb-3 md:pb-4">
                 <div>
                     <input
