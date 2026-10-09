@@ -13,8 +13,9 @@ export default function Home() {
                             href="https://www.gmu.edu/"
                             target="_blank"
                         >
-                          george mason university.
+                          george mason university
                         </Link>
+                        .
                     </p>
                     <p className="text-lg md:text-xl font-normal text-justify py-3 md:py-5">
                         i'm a software engineering intern at {" "}
