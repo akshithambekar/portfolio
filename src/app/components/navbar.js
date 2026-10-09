@@ -147,7 +147,7 @@ export default function Navbar() {
                     />
                 </button>
             </nav>
-            <div className="border-b border-current opacity-50 mt-1 mb-4 md:mb-8 mx-auto max-w-lg"></div>
+            <div className="border-b border-current opacity-50 mt-1 mb-10 mx-auto max-w-lg"></div>
         </header>
     );
 }

@@ -6,12 +6,18 @@ export default function Home() {
         <PageTransition>
             <main className="subpixel-antialiased">
                 <div className="max-w-[512px] justify-center items-center flex flex-col mx-auto px-4 sm:px-0">
-                    <p className="text-lg md:text-xl font-thin text-justify pb-3 md:pb-5">
-                        hi, i'm akshith. i'm a software engineer studying cs at
-                        george mason university.
+                    <p className="text-lg md:text-xl font-normal text-justify pb-3 md:pb-5">
+                        i'm a full-stack software engineer, studying computer science at {' '}
+                        <Link
+                            className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                            href="https://www.gmu.edu/"
+                            target="_blank"
+                        >
+                          george mason university.
+                        </Link>
                     </p>
-                    <p className="text-lg md:text-xl font-thin text-justify py-3 md:py-5">
-                        i'm currently working on ground software for satellites as an intern at {" "}
+                    <p className="text-lg md:text-xl font-normal text-justify py-3 md:py-5">
+                        i'm a software engineering intern at {" "}
                         <Link
                             className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
                             href="https://www.lockheedmartin.com/en-us/index.html"
@@ -19,12 +25,23 @@ export default function Home() {
                         >
                             lockheed martin
                         </Link>
-                        's space division.
+                        's space division, where i'm currently working on software for automated satellite scheduling.
                     </p>
-                    <p className="text-lg md:text-xl font-thin text-left pt-3 md:pt-5 pb-2 self-start">
+                    <p className="text-lg md:text-xl font-normal text-justify py-3 md:py-5">
+                        i'm also researching neuro-symbolic ai for maritime capture-the-flag with the {" "}
+                        <Link
+                            className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
+                            href="https://www.nrl.navy.mil/"
+                            target="_blank"
+                        >
+                            us naval research laboratory
+                        </Link>
+                        .
+                    </p>
+                    <p className="text-lg md:text-xl font-normal text-left pt-3 md:pt-5 pb-2 self-start">
                         previously, i've done:
                     </p>
-            <ul className="text-lg md:text-xl font-thin text-left list-disc list-outside space-y-2 self-start pl-5">
+            <ul className="text-lg md:text-xl font-normal text-left list-disc list-outside space-y-2 self-start pl-5">
                         <li>
                             ai + full-stack engineering @ {" "}
                             <Link
@@ -46,7 +63,7 @@ export default function Home() {
                             </Link>
                         </li>
                         <li>
-                            ml + embedded software/iot research @{" "}
+                            embedded software/iot + ml research @{" "}
                             <Link
                                 className="underline underline-offset-2 hover:font-normal inline-block transition-transform hover:-translate-y-0.5"
                                 href="https://cyberinitiative.org/about/regional-structure/northern-virginia-node/living-innovation-lab.html"
@@ -66,10 +83,6 @@ export default function Home() {
                             </Link>
                         </li>
                     </ul>
-                    <p className="text-lg md:text-xl font-thin text-justify pt-6 md:pt-10">
-                        i'm always open to opportunities, especially intern or
-                        full-time roles in sf or nyc.
-                    </p>
                 </div>
             </main>
         </PageTransition>

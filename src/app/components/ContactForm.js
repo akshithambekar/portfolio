@@ -107,7 +107,7 @@ export default function ContactForm() {
                         onChange={handleChange}
                         placeholder="first name"
                         disabled={isSubmitting}
-                        className="w-full bg-transparent border border-current text-lg md:text-xl font-thin py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current"
+                        className="w-full bg-transparent border border-current text-lg md:text-xl font-normal py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current"
                     />
                     {errors.firstName && (
                         <p className="text-xs md:text-sm text-red-500/80 dark:text-red-400/80 pt-1">
@@ -124,7 +124,7 @@ export default function ContactForm() {
                         onChange={handleChange}
                         placeholder="last name"
                         disabled={isSubmitting}
-                        className="w-full bg-transparent border border-current text-lg md:text-xl font-thin py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current"
+                        className="w-full bg-transparent border border-current text-lg md:text-xl font-normal py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current"
                     />
                     {errors.lastName && (
                         <p className="text-xs md:text-sm text-red-500/80 dark:text-red-400/80 pt-1">
@@ -142,7 +142,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     placeholder="email"
                     disabled={isSubmitting}
-                    className="w-full bg-transparent border border-current text-lg md:text-xl font-thin py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current"
+                    className="w-full bg-transparent border border-current text-lg md:text-xl font-normal py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current"
                 />
                 {errors.email && (
                     <p className="text-xs md:text-sm text-red-500/80 dark:text-red-400/80 pt-1">
@@ -159,7 +159,7 @@ export default function ContactForm() {
                     placeholder="message"
                     rows={6}
                     disabled={isSubmitting}
-                    className="w-full bg-transparent border border-current text-lg md:text-xl font-thin py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none resize-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current overflow-y-auto [&::-webkit-scrollbar]:w-[3px] [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-current [&::-webkit-scrollbar-thumb]:opacity-50 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:border [&::-webkit-scrollbar-thumb]:border-transparent [&::-webkit-scrollbar-thumb]:bg-clip-padding"
+                    className="w-full bg-transparent border border-current text-lg md:text-xl font-normal py-2 px-3 opacity-60 focus:opacity-100 hover:opacity-100 transition-opacity duration-300 outline-none resize-none disabled:opacity-50 disabled:cursor-not-allowed placeholder:text-current overflow-y-auto [&::-webkit-scrollbar]:w-[3px] [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-current [&::-webkit-scrollbar-thumb]:opacity-50 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:border [&::-webkit-scrollbar-thumb]:border-transparent [&::-webkit-scrollbar-thumb]:bg-clip-padding"
                 />
                 {errors.message && (
                     <p className="text-xs md:text-sm text-red-500/80 dark:text-red-400/80">
@@ -168,7 +168,7 @@ export default function ContactForm() {
                 )}
             </div>
 
-            <div className="flex justify-center pb-10 md:pb-16">
+            <div className="flex justify-center">
                 <button
                     type="submit"
                     disabled={isSubmitting || submitStatus === "sent"}
